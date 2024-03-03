@@ -1,0 +1,186 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1c1f26;
+  color: #fff;
+}
+.container{
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+}
+.header{
+  margin-left: 5%;
+  display: flex;
+  align-items: center;
+}
+.header p{
+    font-size: 28px;
+    font-weight: bolder;
+    font-style: normal;
+}
+.header input{
+  width: 800px;
+  background-color: #efefef;
+  margin-left: 180px;
+  padding: 17px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.header input::placeholder{
+  font-size: 16px;
+}
+.header button{
+  background-color: rgb(23, 157, 214);
+  width: 170px;
+  font-size: 20px;
+  height: 50px;
+  margin-left: 10px;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #fff;
+  padding: 10px;
+}
+.header button:hover{
+  background-color: rgb(85, 166, 200);
+}
+.main2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  min-height: 400px;
+  min-width: 500px;
+  padding: 30px;
+  color: #fff;
+  box-sizing: border-box;
+  margin: 5px;
+  flex: 0 0 calc(60% - 60px); /* Each box takes up 50% of the container width minus margins */
+  background-color: #23272f;
+  border-radius: 10px;
+}
+.box1,
+.box3 {
+  flex: 0 0 calc(30% - 10px);
+   /* Each box takes up 30% of the container width minus margins */
+}
+
+
+.weather-container {
+  margin: 10px auto;
+  background-color: #23272f;
+  border-radius: 10px;
+}
+
+.weather-header {
+  text-align: center;
+}
+.weather-header  img{
+  width:100px;
+  height: 90px;
+}
+.city-name {
+  font-size: 42px;
+  margin-bottom: 5px;
+}
+
+.weather-description {
+  font-size: 20px;
+}
+
+.weather-details {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.temperature {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.weather-icon {
+  font-size: 64px;
+}
+
+.additional-info {
+  text-align: center;
+}
+
+.additional-info p {
+  margin: 5px 0;
+ 
+}
+.other-info {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  
+}
+
+.small-box {
+  width: calc(30% - 70px); /* Each small box takes 50% of the container width minus margins */
+  height: 60px;
+  margin: 5px; /* Adjust margin as needed */
+  background-color: #3c3842;
+ padding:40px;
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-direction: column;
+  border-radius: 10px;
+}
+.small-box img {
+  width: 40px; /* Adjust size as needed */
+  margin-right: 10px;
+  align-items: center;
+}
+.small-box p{
+  margin: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.small-box p:nth-child(3) {
+  font-weight: bold;
+  font-size: 22px;
+  
+}
+
+.box3 .small-box{
+  width: calc(30% - 10px);
+}
+/* Adjustments for responsiveness */
+@media only screen and (max-width: 768px) {
+  .box {
+    flex-basis: calc(100% - 20px); /* Each box takes up 100% of the container width minus margins */
+  }
+}
+
+@media (max-width: 480px){
+.header{
+  flex-direction: column;
+  margin: 0;
+}
+.header input{
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.box{
+  min-width: 400px;
+}
+.small-box {
+  width: calc(30% - 30px);
+  height: 80px;
+}
+.box3 .small-box{
+  width: calc(30% - 30px);
+  height: 90px;
+}
+}
