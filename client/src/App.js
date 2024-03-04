@@ -25,7 +25,7 @@ function App() {
   useEffect(() => {
     const fetchWeatherData = async () => {
       try {
-        const response = await axios.get(`https://weather-forecast-5.onrender.com/?city=${search}`);
+        const response = await axios.get(`https://weather-forecast-7hrm.onrender.com/?city=${search}`);
         const { weather, forecast } = response.data;
         setCity(weather);
         setForecast(forecast);

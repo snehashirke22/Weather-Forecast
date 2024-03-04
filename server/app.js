@@ -5,7 +5,7 @@ const cors = require('cors');
 const app = express();
 const port = 3000; 
 const corsOptions = {
-  origin: "https://weathercast-mgsq.onrender.com", // frontend URI (ReactJS)
+  origin: "https://weathercast-w4u2.onrender.com", // frontend URI (ReactJS)
 }
 app.use(cors(corsOptions));
 app.get('/', async (req, res) => {
