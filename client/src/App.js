@@ -25,7 +25,7 @@ function App() {
   useEffect(() => {
     const fetchWeatherData = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/?city=${search}`);
+        const response = await axios.get(`https://your-backend.render.com/?city=${search}`);
         const { weather, forecast } = response.data;
         setCity(weather);
         setForecast(forecast);
