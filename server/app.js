@@ -1,6 +1,7 @@
 const express = require('express');
 const axios = require('axios');
 const cors = require('cors');
+
 const app = express();
 const port = 3000; 
 
@@ -13,7 +14,7 @@ app.get('/', async (req, res) => {
     const forecastUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=996aba8913bc4d9d67ba883e3dd27428`;
     
 
-    const [weatherResponse, forecastResponse, airPollutionResponse] = await Promise.all([
+    const [weatherResponse, forecastResponse] = await Promise.all([
         axios.get(weatherUrl),
         axios.get(forecastUrl)
       ]);
