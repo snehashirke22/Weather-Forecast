@@ -68,7 +68,7 @@ body {
 }
 .box1,
 .box3 {
-  flex: 0 0 calc(30% - 10px);
+  flex: 0 0 calc(30% - 9px);
    
 }
 
