@@ -54,19 +54,19 @@ body {
 }
 
 .box {
-  min-height: 300px;
-  min-width: 400px;
-  padding: 10px;
+  min-height: 400px;
+  min-width: 500px;
+  padding: 20px;
   color: #fff;
   box-sizing: border-box;
   margin: 5px;
-  flex: 0 0 calc(60% - 80px); 
+  flex: 0 0 calc(60% - 60px); 
   background-color: #23272f;
   border-radius: 10px;
 }
 .box1,
 .box3 {
-  flex: 0 0 calc(30% - 9px);
+  flex: 0 0 calc(30% - 10px);
    
 }
 
