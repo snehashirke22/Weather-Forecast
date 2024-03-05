@@ -62,7 +62,7 @@ body {
   color: #fff;
   box-sizing: border-box;
   margin: 5px;
-  flex: 0 0 calc(60% - 90px); 
+  flex: 0 0 calc(60% - 80px); 
   background-color: #23272f;
   border-radius: 10px;
 }
