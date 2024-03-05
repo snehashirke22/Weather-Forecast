@@ -10,9 +10,9 @@ body {
   margin-top: 0;
   display: flex;
   flex-direction: column;
-  width: 90%; /* Adjust width as needed */
-  max-width: 1200px; /* Adjust max-width as needed */
-  margin: 0 auto; /* Center the container */
+  width: 90%; 
+  max-width: 1200px; 
+  margin: 0 auto; 
 }
 .header{
   margin-left: 5%;
@@ -62,14 +62,14 @@ body {
   color: #fff;
   box-sizing: border-box;
   margin: 5px;
-  flex: 0 0 calc(60% - 100px); /* Each box takes up 50% of the container width minus margins */
+  flex: 0 0 calc(60% - 90px); 
   background-color: #23272f;
   border-radius: 10px;
 }
 .box1,
 .box3 {
-  flex: 0 0 calc(30% - 20px);
-   /* Each box takes up 30% of the container width minus margins */
+  flex: 0 0 calc(30% - 10px);
+   
 }
 
 
@@ -129,19 +129,19 @@ body {
 }
 
 .small-box {
-  width: calc(30% - 70px); /* Each small box takes 50% of the container width minus margins */
+  width: calc(30% - 70px); 
   height: 60px;
-  margin: 5px; /* Adjust margin as needed */
+  margin: 5px; 
   background-color: #3c3842;
  padding:40px;
-  display: flex; /* Enable flexbox */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
   flex-direction: column;
   border-radius: 10px;
 }
 .small-box img {
-  width: 40px; /* Adjust size as needed */
+  width: 40px; 
   margin-right: 10px;
   align-items: center;
 }
@@ -160,10 +160,10 @@ body {
 .box3 .small-box{
   width: calc(30% - 10px);
 }
-/* Adjustments for responsiveness */
+
 @media only screen and (max-width: 768px) {
   .box {
-    flex-basis: calc(100% - 20px); /* Each box takes up 100% of the container width minus margins */
+    flex-basis: calc(100% - 20px); 
   }
 }
 
