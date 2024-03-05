@@ -1,3 +1,11 @@
+# Weathercast
+
+Weathercast is a realtime weather website also shows 5-day forecast. Made by using React.js, Express.js and Node.js.
+
+### Demo : (https://weathercast-w4u2.onrender.com/)
+![Weathercast website screenshot](weathercast.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
