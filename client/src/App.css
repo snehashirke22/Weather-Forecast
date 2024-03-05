@@ -6,10 +6,13 @@ body {
   background-color: #1c1f26;
   color: #fff;
 }
-.container{
+.container {
   margin-top: 0;
   display: flex;
   flex-direction: column;
+  width: 90%; /* Adjust width as needed */
+  max-width: 1200px; /* Adjust max-width as needed */
+  margin: 0 auto; /* Center the container */
 }
 .header{
   margin-left: 5%;
@@ -17,7 +20,7 @@ body {
   align-items: center;
 }
 .header p{
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bolder;
     font-style: normal;
 }
@@ -35,7 +38,7 @@ body {
 .header button{
   background-color: rgb(23, 157, 214);
   width: 170px;
-  font-size: 20px;
+  font-size: 18px;
   height: 50px;
   margin-left: 10px;
   border-radius: 5px;
@@ -53,21 +56,22 @@ body {
 }
 
 .box {
-  min-height: 400px;
-  min-width: 500px;
-  padding: 30px;
+  min-height: 300px;
+  min-width: 400px;
+  padding: 20px;
   color: #fff;
   box-sizing: border-box;
   margin: 5px;
-  flex: 0 0 calc(60% - 60px); /* Each box takes up 50% of the container width minus margins */
+  flex: 0 0 calc(60% - 100px); /* Each box takes up 50% of the container width minus margins */
   background-color: #23272f;
   border-radius: 10px;
 }
 .box1,
 .box3 {
-  flex: 0 0 calc(30% - 10px);
+  flex: 0 0 calc(30% - 20px);
    /* Each box takes up 30% of the container width minus margins */
 }
+
 
 
 .weather-container {
@@ -82,9 +86,10 @@ body {
 .weather-header  img{
   width:100px;
   height: 90px;
+  border-radius: 5px;
 }
 .city-name {
-  font-size: 42px;
+  font-size: 36px;
   margin-bottom: 5px;
 }
 
@@ -100,7 +105,7 @@ body {
 }
 
 .temperature {
-  font-size: 48px;
+  font-size: 36px;
   font-weight: bold;
 }
 
@@ -144,6 +149,7 @@ body {
   margin: 5px;
   align-items: center;
   justify-content: center;
+  font-size: 14px;
 }
 .small-box p:nth-child(3) {
   font-weight: bold;
@@ -164,7 +170,10 @@ body {
 @media (max-width: 480px){
 .header{
   flex-direction: column;
-  margin: 0;
+  margin: 5px;
+}
+.main2{
+  margin-top: 15px;
 }
 .header input{
   width: 300px;
@@ -179,8 +188,14 @@ body {
   width: calc(30% - 30px);
   height: 80px;
 }
+.box1{
+ padding: 10px;
+}
 .box3 .small-box{
   width: calc(30% - 30px);
   height: 90px;
+}
+.weather-description {
+  font-size: 22px;
 }
 }
